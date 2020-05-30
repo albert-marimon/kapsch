@@ -1,0 +1,16 @@
+<h1>{{page_title}}</h1>
+<div class="container d-flex justify-content-center">
+	<!-- Search input -->
+	<form class="col-md-5 ml-0" #searchForm="ngForm" (ngSubmit)="onSearchButtonClick()">
+		<div class="form-group">
+			<input type="text" name="search" class="form-control" [(ngModel)]="searchterm" required>
+		</div>
+		<input type="submit" value="Search" class="btn btn-success" [disabled]="searchForm.invalid" />
+	</form>
+</div>
+
+<div class="container d-flex justify-content-center response">
+	<ul>
+		<li *ngFor="let movie of list_movies">{{movie.Title}}</li>
+	</ul>
+</div>
