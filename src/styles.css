@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~ngx-bar-rating/themes/br-default-theme';
+
+body{
+	font-family: Roboto,Arial;
+}
+
+.b-addfav{
+	border:0px solid #000;
+	padding:10px 15px;
+	background-color: #fff577;
+}
+
+.btn-search{
+	background-color: green;
+	color: white;
+	padding:10px 15px;
+	border:0px solid #000;
+}
+
+.input-search{
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-color:#ddd;
+	padding:10px 10px 9px 10px;
+	width: 70%;
+}
+
+.title-page{
+	background-color: #383840;
+	color: white;
+	font-size: 2em;
+}
+
+.fav-box{
+	width: 100%;
+	padding:5px;
+	color:black;
+	background-color:white;
+	border: 1px solid #ddd;
+	height: 70px;
+}
+
+.type-data-movie{
+	font-style: italic;
+	width: 100%;
+	color:#333;
+}
+
+.movie-title-list{
+	color:#333;
+}
+.list-group-item{
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-color:#ddd;
+}
+
+.list-group-item p {
+	margin-bottom:0px;
+}
+
+.icon-detail{
+	color:#c5c4c4;
+}
+
+.icon-box-details-movie{
+	background-color: #383840;
+	color: white;
+}
+
+.colum-text-details-page{
+	border:1px solid #ddd;
+}

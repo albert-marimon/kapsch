@@ -18,4 +18,9 @@ export class MovieService{
 		let headers = new HttpHeaders().set('Content-type','application/x-www-form-urlencoded; charset=UTF-8');
 		return this._http.get(this.url + '?s=' + search_input + '&apikey=' + this.api_key, {headers: headers});
 	};
+
+	getMovieById(id):Observable<any>{
+		let headers = new HttpHeaders().set('Content-type','application/x-www-form-urlencoded; charset=UTF-8');
+		return this._http.get(this.url + '?i=' + id + '&apikey=' + this.api_key, {headers: headers});
+	};
 }

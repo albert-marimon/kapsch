@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 /*COMPONENTS IMPORT*/
 import { SearchComponent } from './components/search/search.component';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 import { ErrorComponent } from './components/error/error.component';
 
 
@@ -11,6 +12,7 @@ import { ErrorComponent } from './components/error/error.component';
 const appRoutes: Routes = [
 	{path: '', component: SearchComponent},
 	{path: 'search', component: SearchComponent},
+	{path: 'movie/:idimdb', component: MovieDetailComponent},
 	{path: '**', component: ErrorComponent}
 ];
 
