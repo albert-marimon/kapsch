@@ -37,16 +37,12 @@ export class MovieDetailComponent implements OnInit {
 					if(response.Response == "True"){
 						this.success = true;
 						this.movie = response;
-						console.log(this.movie);
 					} else {
 						this.success = false;
-						console.log(response.Error);
 					}
-
 				},
 				error => {
 					this.success = false;
-					console.log(error);
 				}
 			);
   		})
